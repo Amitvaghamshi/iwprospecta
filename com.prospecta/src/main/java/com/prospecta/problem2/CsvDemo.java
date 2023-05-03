@@ -73,7 +73,7 @@ public class CsvDemo {
 		   List<String> ans=Files.readAllLines(f);
 		   
 
-		  //  try {
+		    try {
 				
 					   int actualRow=ans.size();
 					   int actualCol=ans.get(0).split(",").length;
@@ -91,9 +91,9 @@ public class CsvDemo {
 					  
 					   return Integer.parseInt(charAns);
 		  
-//		    } catch (Exception e) {
-//		    	   throw new InvalidAttributeValueException("Opps somethin is problem");
-//			}
+		    } catch (Exception e) {
+		    	   throw new InvalidAttributeValueException("Opps somethin is problem");
+			}
 	}
 	
 	public static void csvreaderDemo() {
